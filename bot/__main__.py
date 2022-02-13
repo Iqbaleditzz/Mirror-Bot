@@ -62,9 +62,10 @@ def stats(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/harshpreets63/Mirror-Bot")
-    buttons.buildbutton("Channel", "https://t.me/HarshMirror")
-    reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
+    buttons.buildbutton("🍁 Mirror", "https://t.me/+toacNKA3Dl83M2E1")
+    buttons.buildbutton("🍂 Leech", "https://t.me/+HARs0BHo3HVlOWNl")
+    buttons.buildbutton("🔐 IET TorrCloud 🔐", "https://t.me/IET_torrCloud")
+    reply_markup = InlineKeyboardMarkup(buttons.build_menu(3))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
 This bot can mirror all your links to Google Drive!
@@ -73,7 +74,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'Oops! not a Authorized user.\nPlease join our Channel.\nOr Host Your Own Bot Using My Repo.',
+            'Hey 😻.\nPlease join our Groups.\n<b>© @IET_Owner .</b>',
             context.bot,
             update,
             reply_markup,
