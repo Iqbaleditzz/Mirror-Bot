@@ -73,7 +73,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'Hey 😻.\nPlease join our Groups.\n<b>© @IET_Owner .</b>',
+            'Hey 😻.\n<i>Oops! You Are not a Authorized user.Please join Below 👇</i>\n<b>© @IET_Owner</b>',
             context.bot,
             update,
             reply_markup,
